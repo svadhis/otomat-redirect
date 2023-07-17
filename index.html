@@ -1,1 +1,13 @@
-!
+<script>
+  var langueParDefaut = navigator.language || navigator.userLanguage;
+  
+  var sousDomaineFr = "fr.example.com";
+  var sousDomaineEs = "es.example.com";
+  
+  // Vérifiez la langue par défaut et effectuez la redirection
+  if (langueParDefaut.startsWith("fr")) {
+    window.location.href = "https://" + sousDomaineFr;
+  } else {
+    window.location.href = "https://" + sousDomaineEs;
+  }
+</script>
